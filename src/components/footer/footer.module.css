@@ -35,7 +35,7 @@
 }
 
 .links {
-  font: 1px;
+  flex: 1px;
   display: flex;
   justify-content: flex-end;
   gap: 100px;
