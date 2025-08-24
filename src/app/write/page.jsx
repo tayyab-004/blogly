@@ -50,9 +50,7 @@ const WritePage = () => {
               break;
           }
         },
-        (error) => {
-          // Handle unsuccessful uploads
-        },
+        (error) => {},
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
             setMedia(downloadURL);
@@ -90,8 +88,6 @@ const WritePage = () => {
         catSlug: catSlug || "style",
       }),
     });
-
-    console.log(res);
   };
 
   return (

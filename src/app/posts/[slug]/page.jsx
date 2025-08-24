@@ -5,7 +5,7 @@ import Image from "next/image";
 import Comments from "@/components/comments/Comments";
 
 const getData = async (slug) => {
-  const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
+  const res = await fetch(`${process.env.BACKEND_URL}/api/posts/${slug}`, {
     cache: "no-store",
   });
 
@@ -17,7 +17,8 @@ const getData = async (slug) => {
 };
 
 const SinglePage = async ({ params }) => {
-  const { slug } = params;
+  const p = await params;
+  const { slug } = p;
 
   const data = await getData(slug);
 

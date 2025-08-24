@@ -3,9 +3,10 @@ import styles from "./blogPage.module.css";
 import CardList from "@/components/cardList/CardList";
 import Menu from "@/components/menu/Menu";
 
-const BlogPage = ({ searchParams }) => {
-  const page = parseInt(searchParams.page) || 1;
-  const { cat } = searchParams;
+const BlogPage = async ({ searchParams }) => {
+  const params = await searchParams;
+  const page = parseInt(params?.page) || 1;
+  const cat = params?.cat;
 
   return (
     <div className={styles.container}>

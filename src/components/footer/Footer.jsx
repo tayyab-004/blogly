@@ -12,8 +12,8 @@ const Footer = () => {
           <h1 className={styles.logoText}>Blogly</h1>
         </div>
         <p className={styles.desc}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          deleniti alias distinctio, atque ratione amet.
+          Exploring coding, design, and innovation through blogs that inspire
+          learning, creativity, growth, and collaboration daily.
         </p>
         <div className={styles.icons}>
           <Image src="/facebook.png" alt="facebook" width={18} height={18} />

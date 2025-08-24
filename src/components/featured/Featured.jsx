@@ -14,12 +14,11 @@ const Featured = () => {
         </div>
         <div className={styles.textContainer}>
           <h1 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, est.
+            Discover much of the creative ideas from here!
           </h1>
           <p className={styles.postDesc}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-            laudantium nesciunt deserunt corrupti soluta ipsam? Laboriosam vitae
-            neque nesciunt repudiandae.
+            Exploring coding, design, and innovation through blogs that inspire
+            learning, creativity, growth, and collaboration daily.
           </p>
           <button className={styles.button}>Read More</button>
         </div>
