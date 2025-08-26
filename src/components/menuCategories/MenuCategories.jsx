@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./menuCategories.module.css";
 
 const getData = async () => {
-  const res = await fetch(`${process.env.BACKEND_URL}/api/categories`, {
+  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/categories`, {
     cache: "no-store",
   });
 
